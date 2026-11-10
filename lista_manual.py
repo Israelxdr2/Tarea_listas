@@ -89,7 +89,7 @@ class ListaPasajerosManual:
             i= i-1
 
         self.datos[posicion]= pasajero
-        self.cantidad + 1
+        self.cantidad += 1
         return True
 
     # -----------------------------------------------------------------
@@ -97,7 +97,7 @@ class ListaPasajerosManual:
     # -----------------------------------------------------------------
     def buscar(self, cedula):
 
-        for i in range(self.cantidad-1):
+        for i in range(self.cantidad):
             if self.datos[i].cedula==cedula:
                 return i
         return -1
